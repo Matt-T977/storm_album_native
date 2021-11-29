@@ -25,10 +25,13 @@ import {
   Appbar, 
 } from 'react-native-paper';
 import data from '../data/data';
+// import stockStorm from '../img/stockStorm'
 
 
 const Item = ({ title, category, summary }) => (
   <Card>
+    <Card.Cover source={{ uri: 'https://github.com/Matt-T977/storm_album_native/blob/main/src/img/stockStorm.PNG'}}
+    style={{height: 200}}/>
     <Card.Content>
       <Title>{title} | Category: {category}</Title>
       <Paragraph>{summary}</Paragraph>
@@ -59,19 +62,3 @@ export default function App () {
         </View>
       </SafeAreaView>
     )};
-
-    const styles = StyleSheet.create({
-      // container: {
-      //   flex: 1,
-      //   marginTop: StatusBar.currentHeight || 0,
-      // },
-      item: {
-        backgroundColor: '#f9c2ff',
-        padding: 20,
-        marginVertical: 8,
-        marginHorizontal: 16,
-      },
-      title: {
-        fontSize: 32,
-      },
-    });
