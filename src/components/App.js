@@ -13,7 +13,6 @@ import {
   Text,
   FlatList,
   SafeAreaView,
-  StyleSheet,
   // TouchableOpacity
  } from 'react-native';
 import {
@@ -25,13 +24,12 @@ import {
   Appbar, 
 } from 'react-native-paper';
 import data from '../data/data';
-// import stockStorm from '../img/stockStorm'
+// import images from '../../img'
 
 
 const Item = ({ title, category, summary }) => (
   <Card>
-    <Card.Cover source={{ uri: 'https://github.com/Matt-T977/storm_album_native/blob/main/src/img/stockStorm.PNG'}}
-    style={{height: 200}}/>
+    <Card.Cover source={{uri:'https://unsplash.com/photos/fQM8cbGY6iQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink'}} resizeMode='contain'/>
     <Card.Content>
       <Title>{title} | Category: {category}</Title>
       <Paragraph>{summary}</Paragraph>
