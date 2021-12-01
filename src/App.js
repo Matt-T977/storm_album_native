@@ -20,6 +20,7 @@ import {
 } from 'react-native-paper'
 import ButtonNav from './components/ButtonNav';
 import data from './data/data';
+import Styles from './styles/AppStyle';
 
 
 
@@ -32,15 +33,17 @@ export default function App () {
 
     return (
       <ScrollView>
-        <Appbar.Header>
-          <Appbar.Content title="Storm Album" />
-        </Appbar.Header>
-        <View>
-          <Title>Hello "User"</Title>
-          <ButtonNav title='Storms'/>
-          <ButtonNav title='Add Storm'/>
-          <ButtonNav title='Season'/>
-          <ButtonNav title='Career'/>
+        <View style={Styles.background}>
+          <Appbar.Header>
+            <Appbar.Content title="Storm Album" />
+          </Appbar.Header>
+          <View>
+            <Title style={{flex:1}}>Hello "User"</Title>
+            <ButtonNav style={{flex:1}} title='Storms'/>
+            <ButtonNav style={{flex:1}} title='Add Storm'/>
+            <ButtonNav style={{flex:1}} title='Season'/>
+            <ButtonNav style={{flex:1}}title='Career'/>
+          </View>
         </View>
       </ScrollView>
     )};
