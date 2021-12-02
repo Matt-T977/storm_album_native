@@ -33,16 +33,16 @@ export default function App () {
 
     return (
       <ScrollView>
-        <View style={Styles.background}>
+        <View >
           <Appbar.Header>
             <Appbar.Content title="Storm Album" />
           </Appbar.Header>
-          <View>
-            <Title style={{flex:1}}>Hello "User"</Title>
-            <ButtonNav style={{flex:1}} title='Storms'/>
-            <ButtonNav style={{flex:1}} title='Add Storm'/>
-            <ButtonNav style={{flex:1}} title='Season'/>
-            <ButtonNav style={{flex:1}}title='Career'/>
+          <View style={Styles.container}>
+            <Title>Hello "User"</Title>
+            <ButtonNav title='Storms'/>
+            <ButtonNav title='Add Storm'/>
+            <ButtonNav title='Season'/>
+            <ButtonNav title='Career'/>
           </View>
         </View>
       </ScrollView>

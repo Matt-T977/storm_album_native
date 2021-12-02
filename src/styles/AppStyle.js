@@ -3,8 +3,10 @@ import { StyleSheet } from 'react-native'
 
 
 const Styles = StyleSheet.create({
-    background: {
+    container: {
         flex: 1,
+        flexDirection: 'column',
+        height: 500,
         justifyContent: 'space-evenly',
         backgroundColor: '#000000',
 
