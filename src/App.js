@@ -33,17 +33,14 @@ export default function App () {
 
     return (
       <ScrollView>
-        <View >
           <Appbar.Header>
             <Appbar.Content title="Storm Album" />
           </Appbar.Header>
           <View style={Styles.container}>
-            <Title>Hello "User"</Title>
+            {/* <Image source={require('./img/stormPhoto.PNG')}/> */}
             <ButtonNav title='Storms'/>
-            <ButtonNav title='Add Storm'/>
             <ButtonNav title='Season'/>
             <ButtonNav title='Career'/>
           </View>
-        </View>
       </ScrollView>
     )};
