@@ -3,7 +3,7 @@
  */
  import React from 'react';
  import {AppRegistry} from 'react-native';
- import App from './src/App';
+ import App from './src/components/App';
  import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
  import {name as appName} from './app.json';
  
@@ -17,7 +17,7 @@
       accent: '#F0A500',
       surface: '#334756',
       background: '#000000',
-      text: '#F0A500'
+      text: '#F0A500',
     },
   };
 

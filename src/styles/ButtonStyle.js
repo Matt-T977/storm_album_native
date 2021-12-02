@@ -4,8 +4,8 @@ import { StyleSheet } from 'react-native'
 
 const ButtonStyles = StyleSheet.create({
     button: {
-        color: '#F0A500',
-        marginVertical: 15,
+        // color: '#F0A500',
+        marginBottom: 25,
     },
 })
 
